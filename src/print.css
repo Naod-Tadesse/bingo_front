@@ -1,0 +1,13 @@
+@media print {
+  @page {
+    size: landscape;
+  }
+
+  .page-break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure div takes up full viewport height */
+    page-break-after: always; /* Ensure each card is on a new page */
+  }
+}
