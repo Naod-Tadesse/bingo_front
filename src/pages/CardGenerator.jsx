@@ -48,9 +48,14 @@ const CardGenerator = () => {
           className="border border-gray-500 bg-neutral-700 text-white px-4 py-2 rounded-full outline-none"
         >
           <option key={`d`}>number of cards</option>
-          {[...Array(110).keys()].map((index) => (
+          {/* {[...Array(110).keys()].map((index) => (
             <option key={index} value={index + 1}>
               {index + 1}
+            </option>
+          ))} */}
+          {[1000, 2000, 3000, 4000, 5000].map((item, index) => (
+            <option key={index} value={item}>
+              {item}
             </option>
           ))}
         </select>
